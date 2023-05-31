@@ -10,6 +10,7 @@ public class solution
     {
         s=s+i;
     }
-    System.out.println(s);
+        System.out.print(s);
+    
  }
 } 
