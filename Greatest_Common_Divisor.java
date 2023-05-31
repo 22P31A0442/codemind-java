@@ -1,18 +1,18 @@
 import java.util.*;
 public class solution
 {
-    public static void main(String args[])
+ public static void main(String args[])
+ {
+    Scanner sls=new Scanner(System.in);
+    int x,y,i,gcd=0;
+    x=sls.nextInt();
+    y=sls.nextInt();
+    for(i=1;i<=x||i<=y;i++)
     {
-        Scanner sc=new Scanner(System.in);
-    int a,b,i,gcd=0;
-    a=sc.nextInt();
-    b=sc.nextInt();
-    for(i=1;i<=a||i<=b;i++)
-    {
-        if(a%i==0&&b%i==0)
+        if(x%i==0&&y%i==0)
         gcd=i;
     }
-    System.out.println(gcd);
-
-    }
-}
+    System.out.print(gcd);
+    
+ }
+} 
