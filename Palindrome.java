@@ -1,32 +1,22 @@
-import java.util.Scanner;
-public class String4
+import java.util.*;
+public class solution
 {
-  public static String findReverse(String str)
-  {
-     
-	  char ch[]=str.toCharArray();
-	  String reverse="";
-	  for(int i=0;i<ch.length;i++)
-	  {
-	     reverse=ch[i]+reverse;
-	  }
-	  return reverse;
-  }
-  public static boolean isPalindrome(String str1)
-  {
-      String str2=findReverse(str1);
-	  if(str1.equalsIgnoreCase(str2))
-	      return true;
-	  else 
-	      return false;
-  }
-  public static void main(String args[])
-  {
-     Scanner sc=new Scanner(System.in);
-	 String line=sc.nextLine();
-	 if(isPalindrome(line))
-	    System.out.println("True");
-	 else 
-	    System.out.println("False");
-  }
-}
+ public static void main(String args[])
+ {
+    Scanner sc=new Scanner(System.in);
+    int x,n,d,s=0;
+    x=sc.nextInt();
+    n=x;
+    while(n!=0)
+    {
+        d=n%10;
+        n=n/10;
+        s=s*10+d;
+    }
+    if(s==x)
+    System.out.println("Palindrome");
+    else
+    System.out.println("Not Palindrome");
+    
+ }
+} 
