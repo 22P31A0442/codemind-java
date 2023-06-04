@@ -6,14 +6,11 @@ public class solution
     Scanner sc=new Scanner(System.in);
     int n,i,j;
     n=sc.nextInt();
-    for(i=n;i>=1;i--)
+    for(i=1;i<=n;i++)
     {
         for(j=1;j<=i;j++)
-        {
-    System.out.print(j);
-        }
-        System.out.format("
-");
+        System.out.print(j);
+        System.out.println();
     }
  }
 } 
